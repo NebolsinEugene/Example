@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -70,5 +71,64 @@
         </div>
       </div>
     </header>
+    <section class="s-banner">
+      <!-- Slider main container -->
+      <div class="swiper banner-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide"
+            style="background-image: url(images/banner-bg-1.jpg)"
+          >
+            <div class="banner-content">
+              <div class="banner-subtitle">Сертифицированная компания</div>
+              <h2 class="banner-title">
+                <strong>Дружественная</strong><br />
+                энергия 24/7 без вреда для планеты
+              </h2>
+              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(images/banner-bg-2.jpg)"
+          >
+            <div class="banner-content">
+              <div class="banner-subtitle">Сертифицированная компания</div>
+              <h2 class="banner-title">
+                <strong>Проектирование зданий</strong> Только качественные
+                материалы
+              </h2>
+              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(images/banner-bg-3.jpg)"
+          >
+            <div class="banner-content">
+              <div class="banner-subtitle">Сертифицированная компания</div>
+              <h2 class="banner-title">
+                <strong>Строительство домов</strong> Построим качественный дом
+                за короткий срок
+              </h2>
+              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+            </div>
+          </div>
+
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
