@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!--Для всплывающего окна-->
+    <link rel="stylesheet" href="css/magnific-popup.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +16,24 @@
     <title>Consruction</title>
   </head>
   <body>
+    <div class="modal-form mfp-hide mfp-width-anim" id="modal-form">
+      <div class="modal-form-head">
+        <div class="modal-form-logo">
+          <img src="images/logo-header.svg" alt="Логотип" />
+        </div>
+        <div class="modal-form-close">
+          <img src="images/close.svg" alt="Close" />
+        </div>
+      </div>
+      <div class="modal-form-body">
+        <div class="modal-form-title">Заказать звонок</div>
+        <form>
+          <input type="text" placeholder="Ваше имя*" required />
+          <input type="text" placeholder="Ваш телефон*" required />
+          <button class="form-button">Отправить</button>
+        </form>
+      </div>
+    </div>
     <header class="site-header">
       <div class="header-top">
         <div class="container">
@@ -71,6 +91,7 @@
         </div>
       </div>
     </header>
+
     <section class="s-banner">
       <!-- Slider main container -->
       <div class="swiper banner-swiper">
@@ -87,7 +108,7 @@
                 <strong>Дружественная</strong><br />
                 энергия 24/7 без вреда для планеты
               </h2>
-              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+              <a href="#" class="banner-btn def-btn">Смотреть услуги</a>
             </div>
           </div>
           <div
@@ -100,7 +121,7 @@
                 <strong>Проектирование зданий</strong> Только качественные
                 материалы
               </h2>
-              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+              <a href="" class="def-btn">Смотреть услуги</a>
             </div>
           </div>
           <div
@@ -113,7 +134,7 @@
                 <strong>Строительство домов</strong> Построим качественный дом
                 за короткий срок
               </h2>
-              <a href="" class="banner-btn def-btn">Смотреть услуги</a>
+              <a href="" class="def-btn">Смотреть услуги</a>
             </div>
           </div>
 
@@ -128,7 +149,119 @@
       </div>
     </section>
 
+    <div class="s-about">
+      <div class="container">
+        <div class="about-row">
+          <div class="about-left">
+            <h2 class="def-title">О нашей компании</h2>
+            <div class="def-desc">
+              <strong>Consruction</strong> - компания, предлагающа яполный
+              комплекс услуг по строительному дизайну и придерживащаяся простой
+              и уникальной философии проектирования и строительства. Мы верим в
+              то, что один строительный дизайнер будет выполнять работу от
+              концепции на бумаги до реализации на Вашей территориию. Причина:
+              делая это, Вы можете общаться и работать с одним человеком, где вы
+              можете поделиться своими мыслями и идеями, чтьобы воплотить их в
+              жизнь в сотрудничестве.
+            </div>
+            <a href="#" class="def-btn">Заказать услугу</a>
+          </div>
+          <div class="about-right">
+            <img src="images/about-bg.jpg" alt="мужик на лестнице" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="s-numbers">
+      <div class="container">
+        <div class="numbers-row">
+          <div class="numbers-left">
+            <h2 class="def-title">Наша компания<br />в цифрах</h2>
+            <div class="def-desc">
+              Одним важным критерием нашей компании является
+              клиентоориентированность. Заказывая наши услуги, Вы можете быть
+              уверены в качестве результата.
+            </div>
+          </div>
+          <div class="numbers-right">
+            <div class="numbers-item">
+              <div class="numbers-num">600</div>
+              <div class="numbers-desc">Довольных <br />клиентов</div>
+            </div>
+            <div class="numbers-item">
+              <div class="numbers-num">10</div>
+              <div class="numbers-desc">Лет опыта работы</div>
+            </div>
+            <div class="numbers-item">
+              <div class="numbers-num">50</div>
+              <div class="numbers-desc">Наград</div>
+            </div>
+            <div class="numbers-item">
+              <div class="numbers-num">100</div>
+              <div class="numbers-desc">Реализованных <br />проектов</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="s-services">
+      <div class="container">
+        <h2 class="center-title">Наши услуги</h2>
+
+        <div class="services-row">
+          <div class="services-item">
+            <div class="services-thumb">
+              <img src="images/service-1.jpg" alt="Строительство домов" />
+            </div>
+            <div class="services-body">
+              <h4 class="services-title">Строительство домов</h4>
+              <a
+                href="#modal-form"
+                data-effect="mfp-zoom-in"
+                class="def-btn services-btn"
+                >Заказать услугу</a
+              >
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-thumb">
+              <img src="images/service-2.jpg" alt="Строительство домов" />
+            </div>
+            <div class="services-body">
+              <h4 class="services-title">Ремонт по дому</h4>
+              <a
+                href="#modal-form"
+                data-effect="mfp-zoom-in"
+                class="def-btn services-btn"
+                >Заказать услугу</a
+              >
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-thumb">
+              <img src="images/service-3.jpg" alt="Строительство домов" />
+            </div>
+            <div class="services-body">
+              <h4 class="services-title">Проектирование зданий</h4>
+              <a
+                href="#modal-form"
+                data-effect="mfp-zoom-in"
+                class="def-btn services-btn"
+                >Заказать услугу</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <!--Для всплывающего окна-->
+    <script src="js/magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
